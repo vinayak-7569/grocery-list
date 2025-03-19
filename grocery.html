@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="grocery.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Grocery List</h2>
+
+        <!-- Grocery Input Section -->
+        <div class="input-section">
+            <label for="item">Item: </label>
+            <input type="text" id="item" placeholder="Enter item name">
+            <label for="expiry">Expiry Date: </label>
+            <input type="date" id="expiry">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <!-- Grocery List Section -->
+        <h3>Items</h3>
+        <ul id="groceryList"></ul>
+    </div>
+
+    <script src="grocery.js"></script>
+</body>
+</html>
